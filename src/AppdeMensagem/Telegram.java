@@ -2,12 +2,14 @@ package AppdeMensagem;
 
 public class Telegram extends ServicoMensageminstantanea {
 
-    public void validarConexao() {
+    protected void validarConexao() {
         System.out.println("validando conexão com o telegram");
     }
 
     public void enviarMensagem() {
+        validarConexao();
         System.out.println("Enviando mensagem pelo Telegram");
+        salvandohistorico();
     }
 
     public void receberMensagem() {

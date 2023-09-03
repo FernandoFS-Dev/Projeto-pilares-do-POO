@@ -19,8 +19,6 @@ public class ComputadorPedrinho {
             smi = new Telegram();
         }
 
-        smi.validarConexao();
-
         smi.enviarMensagem();
 
         smi.receberMensagem();

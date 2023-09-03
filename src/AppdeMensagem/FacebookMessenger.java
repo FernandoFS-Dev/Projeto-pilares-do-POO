@@ -2,12 +2,14 @@ package AppdeMensagem;
 
 public class FacebookMessenger extends ServicoMensageminstantanea {
 
-    public void validarConexao() {
+    protected void validarConexao() {
         System.out.println("validando conexão com o Facebook Messenger");
     }
 
     public void enviarMensagem() {
+        validarConexao();
         System.out.println("Enviando mensagem pelo Facebook Messenger");
+        salvandohistorico();
     }
 
     public void receberMensagem() {

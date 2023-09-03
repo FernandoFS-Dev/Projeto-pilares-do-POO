@@ -2,11 +2,15 @@ package AppdeMensagem;
 
 public abstract class ServicoMensageminstantanea {
 
-    public abstract void validarConexao();
+    protected abstract void validarConexao();
 
     public abstract void enviarMensagem ();
 
     public abstract void receberMensagem();
+
+    protected void salvandohistorico() {
+        System.out.println("Mensagem Salvada no Histórico");
+    }
 
 
 

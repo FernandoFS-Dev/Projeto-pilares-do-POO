@@ -2,12 +2,14 @@ package AppdeMensagem;
 
 public class MSNMessenger extends ServicoMensageminstantanea {
 
-    public void validarConexao() {
+    protected void validarConexao() {
         System.out.println("validando conexão com o MSN Messenger");
     }
 
     public void enviarMensagem() {
+        validarConexao();
         System.out.println("Enviando mensagem pelo MSN Messenger");
+        salvandohistorico();
     }
 
     public void receberMensagem() {
